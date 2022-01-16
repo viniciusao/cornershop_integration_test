@@ -25,14 +25,14 @@ of both specified branches .
     * [x] Check if csv files exists.
     * [x] If not, then download them.
    
-2. [ ] CLI
-    * [ ] Integration Setup flag.
-    * [ ] API Credentials flags.
-    * [ ] Ingestion start flag.
+2. [x] CLI
+    * [x] Integration Setup flag.
+    * [x] API Credentials flags.
+    * [x] Ingestion start flag.
 
-3. [ ] Package
-    * [ ] pyproject.toml and setup.cfg
-    * [ ] entry points
+3. [x] Package
+    * [x] pyproject.toml and setup.cfg
+    * [x] entry points
 
 4. [x] API
     * [x] Interface
