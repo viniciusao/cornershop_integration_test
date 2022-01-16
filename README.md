@@ -33,8 +33,8 @@ of both specified branches .
 
 ### Tests
 
-4. `pytest tests/`
-5. `mypy src/`
+5. `pytest tests/`
+6. `mypy src/`
 
 ## TODO
 
