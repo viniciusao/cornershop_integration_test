@@ -16,7 +16,12 @@ for all branches or only the specified ones. So I
 decided to follow the API docs which the products with
 the same SKU merges into only one SKU.
 The app does that, and only the topmost expensive
-of both specified branches .
+of both specified branches.
+2. Packages units are vast. In the command-line tool, 
+there is a flag to specify any, but default are: 
+___GRS, GR, KG, and ML___; because I looked through the 100 
+first rows in products' CSV and these were the _more frequent_.
+
 
 ## Usage
 
