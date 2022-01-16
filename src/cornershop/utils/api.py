@@ -3,8 +3,9 @@ import base64
 import builtins
 import enum
 import json
+import logging
 import pathlib
-from typing import Any, Dict, Union
+from typing import Any, cast, Dict, Tuple, Union
 
 import requests
 
@@ -180,3 +181,43 @@ class APIOps(APIOpsInterface):
         )
         r = requests.post(url, headers=self.headers, json=product)
         return r.status_code
+
+
+class API:
+
+    _API = APIEnum()
+
+    def __init__(self, *, api: APIOpsInterface, logger: logging.Logger) -> None:
+        self._api = api
+        self._logger = logger
+
+    def merchant_id(self, merchant_name: builtins.str) -> builtins.str:
+        return cast(builtins.str, self._api.merchant_info(merchant_name)[self._API.ID])
+
+    def update_merchant_info(
+            self,
+            merchant_name: builtins.str,
+            property_to_change: builtins.str,
+            value_to_assign: Any
+    ) -> None:
+
+        self._api.update_merchant_info(
+            merchant_name,
+            property_to_change,
+            value_to_assign
+        )
+
+    def delete_merchant_info(self, merchant_name: builtins.str) -> None:
+        self._api.delete_merchant_info(merchant_name)
+
+    def send_products(
+            self,
+            product: Tuple[builtins.int, Dict[builtins.str, Any]]
+    ) -> None:
+
+        item_number, item = product
+        response = self._api.send_product_data(item)
+        if response == 200:
+            self._logger.info(f'Ingested product number: {item_number}')
+        else:
+            self._logger.error(f'Product has not been ingested: {item}')
