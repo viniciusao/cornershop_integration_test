@@ -23,11 +23,18 @@ of both specified branches .
 1. `git clone <repo> && cd <repo>`
 2. `python -m venv <repo_path>/venv`
 3. `source venv/bin/activate`
+
+### Ingest
+
 4. `pip install .`
 5. `integration --setup`
 6. `api-credentials --client-id mRkZGFjM --client-secret ZGVmMjMz`
 7. `ingestion --start --merchant-ingest "Richard's" --merchant-update "Richard's" --merchant-delete Beauty`
 
+### Tests
+
+4. `pytest tests/`
+5. `mypy src/`
 
 ## TODO
 
