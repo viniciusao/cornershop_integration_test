@@ -36,7 +36,7 @@ of both specified branches .
 
 5. [ ] API
     * [x] Interface
-    * [ ] Define requests ops methods
+    * [x] Define requests ops methods
 
 6. [ ] CSV Manipulation
     * [x] Interface
