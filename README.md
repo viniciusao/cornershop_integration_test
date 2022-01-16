@@ -35,9 +35,9 @@ of both specified branches .
     * [ ] entry points
 
 5. [ ] API
-    * [ ] Interface
+    * [x] Interface
     * [ ] Define requests ops methods
 
 6. [ ] CSV Manipulation
-    * [ ] Interface
+    * [x] Interface
     * [ ] Define pandas ops methods
