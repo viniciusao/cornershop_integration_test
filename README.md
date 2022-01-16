@@ -34,12 +34,12 @@ of both specified branches .
     * [ ] pyproject.toml and setup.cfg
     * [ ] entry points
 
-4. [ ] API
+4. [x] API
     * [x] Interface
     * [x] Define requests ops methods
 
-5. [ ] CSV Manipulation
+5. [x] CSV Manipulation
     * [x] Interface
     * [x] Define pandas ops methods
 
-6. [ ] Model
+6. [x] Model
