@@ -1,3 +1,10 @@
+""" The request/response cycle is known because of the docs
+https://documenter.getpostman.com/view/1992239/TVmMgxxp#c76cbd6d-bbac-4853-8d7a-ff86b76f7127
+and through local docker server requests tests. So
+there are no try/except, control flows statements or
+any sort of fine grained control of the requests.
+"""
+
 import abc
 import base64
 import builtins
