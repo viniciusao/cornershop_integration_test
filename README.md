@@ -21,9 +21,9 @@ of both specified branches .
 
 ## TODO
 
-1. [ ] Integration Setup.
-    * [ ] Check if csv files exists.
-    * [ ] If not, then download them.
+1. [x] Integration Setup.
+    * [x] Check if csv files exists.
+    * [x] If not, then download them.
    
 2. [ ] CLI
     * [ ] Integration Setup flag.
@@ -34,10 +34,12 @@ of both specified branches .
     * [ ] pyproject.toml and setup.cfg
     * [ ] entry points
 
-5. [ ] API
+4. [ ] API
     * [x] Interface
     * [x] Define requests ops methods
 
-6. [ ] CSV Manipulation
+5. [ ] CSV Manipulation
     * [x] Interface
-    * [ ] Define pandas ops methods
+    * [x] Define pandas ops methods
+
+6. [ ] Model
