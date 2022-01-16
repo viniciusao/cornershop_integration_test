@@ -1,4 +1,3 @@
-##RATIONALE
 ### Overall
 
 <p>I divided the app into three main components:
